@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 30px 20px;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #2980b9;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1f6391;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease-in-out;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Galería */
+#galeria {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.cinta-carrusel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.cinta {
+  display: flex;
+  width: max-content;
+  animation: desplazar 30s linear infinite;
+}
+
+.cinta img {
+  width: 450px;
+  height: 380px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Animación que mueve las imágenes */
+@keyframes desplazar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.redes-sociales {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.redes-sociales a {
+  color: #444;
+  font-size: 48px;
+  margin: 0 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+}
+
+.redes-sociales a:first-child:hover {
+  color: #25D366; /* WhatsApp */
+}
+
+.redes-sociales a:last-child:hover {
+  color: #E1306C; /* Instagram */
+}

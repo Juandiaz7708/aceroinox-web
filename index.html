@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acerinox</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #00c0ff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Aceroinox</h1>
+    <p>Especialistas en soldadura de argón y trabajos personalizados</p>
+    <div class="redes-sociales">
+  <a href="https://wa.me/18092086529" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/acero.inox.rd" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+  </header>
+
+  <section id="servicios">
+    <h2>¿Qué ofrecemos?</h2>
+    <ul>
+      <li>Muebles personalizados en acero inoxidable</li>
+      <li>Pasamanos para escaleras y balcones</li>
+      <li>Mesas y fregaderos industriales</li>
+      <li>Equipos para carnicerías y laboratorios clínicos</li>
+      <li>¡Y cualquier idea que tengas, la hacemos realidad!</li>
+    </ul>
+  </section>
+
+ <section id="galeria">
+  <h2>Galería de trabajos</h2>
+  <div class="cinta-carrusel">
+    <div class="cinta">
+      <img src="img/trabajo1.jpg" alt="Trabajo 1">
+      <img src="img/trabajo2.jpg" alt="Trabajo 2">
+      <img src="img/trabajo3.jpg" alt="Trabajo 3">
+      <img src="img/trabajo4.jpg" alt="Trabajo 4">
+      <!-- Duplicadas para animación infinita -->
+      <img src="img/trabajo1.jpg" alt="Trabajo 1">
+      <img src="img/trabajo2.jpg" alt="Trabajo 2">
+      <img src="img/trabajo3.jpg" alt="Trabajo 3">
+      <img src="img/trabajo4.jpg" alt="Trabajo 4">
+    </div>
+  </div>
+</section>
+
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formularioContacto">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="¿Qué necesitas?" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Acero Inoxidable Profesional - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
