@@ -21,3 +21,12 @@ slides[slideIndex].classList.add('active');
 // Cambiar cada 3 segundos
 setInterval(showSlides, 3000); // Puedes cambiar el tiempo si deseas
 
+function mostrarCategoria(categoriaId) {
+    const categorias = document.querySelectorAll('.categoria');
+
+    categorias.forEach(cat => {
+        cat.style.display = 'none';
+    });
+
+    document.getElementById(categoriaId).style.display = 'block';
+}

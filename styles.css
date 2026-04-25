@@ -145,3 +145,32 @@ footer {
 .redes-sociales a:last-child:hover {
   color: #E1306C; /* Instagram */
 }
+
+/*Apariencia de el apartado para los submenus con los trabajos*/
+.trabajos {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-trabajos button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-trabajos button:hover {
+    background-color: #555;
+}
+
+.categoria {
+    display: none;
+    margin-top: 20px;
+}
+
+.categoria img {
+    width: 300px;
+    border-radius: 10px;
+}
