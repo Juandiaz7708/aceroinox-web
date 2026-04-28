@@ -1,173 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-
-<!--  Palabras clave para encontrar la pagina en la red --> 
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aceroinox - Trabajos en acero inoxidable en Jarabacoa</title>
+    <title>Aceroinox - Trabajos en acero inoxidable</title>
     <meta name="description" content="Fabricación de muebles, pasamanos y trabajos en acero inoxidable en República Dominicana.">
-
-    <!-- Aquí van tus CSS -->
     <link rel="stylesheet" href="style.css">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acerinox</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #1f1f1f;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      color: #00c0ff;
-    }
-  </style>
-
 </head>
-
 <body>
-  <header>
-    <h1>Aceroinox</h1>
-    <p>Especialistas en soldadura de argón y trabajos personalizados</p>
-    <div class="redes-sociales">
-  <a href="https://wa.me/18092086529" target="_blank" title="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <a href="https://www.instagram.com/acero.inox.rd" target="_blank" title="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-</div>
 
-  </header>
-
-  <section id="servicios">
-    <h2>¿Qué ofrecemos?</h2>
-    <ul>
-      <li>Muebles personalizados en acero inoxidable</li>
-      <li>Pasamanos para escaleras y balcones</li>
-      <li>Mesas y fregaderos industriales</li>
-      <li>Equipos para carnicerías y laboratorios clínicos</li>
-      <li>¡Y cualquier idea que tengas, la hacemos realidad!</li>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1 class="logo">Aceroinox</h1>
+    <ul class="menu">
+        <li><a href="#" onclick="mostrarCategoria('hospitalarios')">Hospitalarios</a></li>
+        <li><a href="#" onclick="mostrarCategoria('decorativos')">Decorativos</a></li>
+        <li><a href="#" onclick="mostrarCategoria('escaleras')">Escaleras</a></li>
     </ul>
-  </section>
+</nav>
 
+<!-- HERO -->
+<header class="hero">
+    <h2>Trabajos en Acero Inoxidable</h2>
+    <p>Calidad, resistencia y diseño moderno para tu hogar o negocio.</p>
+    <a href="https://wa.me/18090000000" target="_blank" class="btn">Cotiza por WhatsApp</a>
+</header>
 
-<h2>Tipos de trabajos</h2>  <!-- Aqui estan los subtmenus para clasificar los trabajos-->
-
-    <div class="menu-trabajos">
-        <button onclick="mostrarCategoria('hospitalarios')">Hospitalarios</button>
-        <button onclick="mostrarCategoria('decorativos')">Decorativos</button>
-        <button onclick="mostrarCategoria('escaleras')">Escaleras</button>
-    </div>
+<!-- SECCIONES -->
+<section class="contenedor">
 
     <!-- Hospitalarios -->
     <div id="hospitalarios" class="categoria">
-        <h3>Trabajos Hospitalarios</h3>
-        <img src="img/hospital1.jpg" alt="Mesa quirúrgica">
-        <p>Fabricación de mobiliario clínico en acero inoxidable.</p>
+        <h3>Hospitalarios</h3>
+        <div class="galeria">
+            <img src="img/hospitalarios/h1.jpg">
+            <img src="img/hospitalarios/h2.jpg">
+            <img src="img/hospitalarios/h3.jpg">
+        </div>
     </div>
 
     <!-- Decorativos -->
     <div id="decorativos" class="categoria">
-        <h3>Trabajos Decorativos</h3>
-        <img src="img/decorativo/decorativo1.jpeg" alt="Barandilla moderna">
-        <p>Cama en acero inoxidable en terminación dorada</p>
-
-        <img src="img/decorativo/decorativo2.jpeg" alt="Barandilla moderna">
-        <p>Cama King en acero inoxidable en terminación dorada</p>
-
-        <img src="img/decorativo/decorativo3.jpeg" alt="Barandilla moderna">
-        <p>Credenza en hidrofugo color crema con base en acero inoxidable, en terminación dorada</p>
+        <h3>Decorativos</h3>
+        <div class="galeria">
+            <img src="img/decorativos/d1.jpg">
+            <img src="img/decorativos/d2.jpg">
+            <img src="img/decorativos/d3.jpg">
+        </div>
     </div>
 
     <!-- Escaleras -->
     <div id="escaleras" class="categoria">
         <h3>Escaleras</h3>
-        <img src="img/escaleras/escalera1.jpeg" alt="Escalera moderna">
-        <p>Pasamanos en acero inoxidable</p>
-
-        <div class="item">
-            <img src="img/escaleras/escalera2.jpeg" alt="Escalera con pasamanos">
-            <p>Elegancia, una conbinación perfecta entre gold y silver</p>
-        </div>
-
-        <div class="item">
-            <img src="img/escaleras/escalera3.jpeg" alt="Escalera con pasamanos">
-            <p>Elegancia, una conbinación perfecta entre gold y silver</p>
+        <div class="galeria">
+            <img src="img/escaleras/e1.jpg">
+            <img src="img/escaleras/e2.jpg">
+            <img src="img/escaleras/e3.jpg">
         </div>
     </div>
+
 </section>
 
-<!--Cinturon de imagenes de la pagina-->
- <section id="galeria">
-  <h2>Galería de trabajos</h2>
-  <div class="cinta-carrusel">
-    <div class="cinta">
-      <img src="img/trabajo1.jpg" alt="Trabajo 1">
-      <img src="img/trabajo2.jpg" alt="Trabajo 2">
-      <img src="img/trabajo3.jpg" alt="Trabajo 3">
-      <img src="img/trabajo4.jpg" alt="Trabajo 4">
-      <!-- Duplicadas para animación infinita -->
-      <img src="img/trabajo1.jpg" alt="Trabajo 1">
-      <img src="img/trabajo2.jpg" alt="Trabajo 2">
-      <img src="img/trabajo3.jpg" alt="Trabajo 3">
-      <img src="img/trabajo4.jpg" alt="Trabajo 4">
-    </div>
-  </div>
-</section>
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Aceroinox | Jarabacoa, República Dominicana</p>
+</footer>
 
-
-  </section>
-
-  <section id="contacto">
-    <h2>Contáctanos</h2>
-    <form id="formularioContacto">
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo" required>
-      <textarea placeholder="¿Qué necesitas?" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Acero Inoxidable Profesional - Todos los derechos reservados</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

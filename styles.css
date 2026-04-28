@@ -1,206 +1,99 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
 }
 
-header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
 }
 
-section {
-  padding: 30px 20px;
-}
-
-h2 {
-  color: #2c3e50;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #2980b9;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #1f6391;
-}
-
-footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.slider-container {
-  width: 90%;
-  max-width: 500px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  transition: opacity 1s ease-in-out;
-  display: none;
-}
-
-.slide.active {
-  display: block;
-}
-
-/* Galería */
-#galeria {
-  padding: 40px 20px;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.cinta-carrusel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.cinta {
-  display: flex;
-  width: max-content;
-  animation: desplazar 30s linear infinite;
-}
-
-.cinta img {
-  width: 450px;
-  height: 380px;
-  object-fit: cover;
-  margin: 0 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Animación que mueve las imágenes */
-@keyframes desplazar {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.redes-sociales {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.redes-sociales a {
-  color: #444;
-  font-size: 48px;
-  margin: 0 20px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.redes-sociales a:hover {
-  transform: scale(1.2);
-}
-
-.redes-sociales a:first-child:hover {
-  color: #25D366; /* WhatsApp */
-}
-
-.redes-sociales a:last-child:hover {
-  color: #E1306C; /* Instagram */
-}
-
-/*Apariencia de el apartado para los submenus con los trabajos*/
-.trabajos {
-    text-align: center;
-    padding: 20px;
-}
-
-.menu-trabajos button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
+.logo {
     color: white;
-    cursor: pointer;
 }
 
-.menu-trabajos button:hover {
-    background-color: #555;
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* CONTENIDO */
+.contenedor {
+    padding: 30px;
 }
 
 .categoria {
     display: none;
-    margin-top: 20px;
 }
 
-.categoria img {
-    width: 300px;
-    border-radius: 10px;
-}
-
-/*Aqui se da el estilo a la galeria de fotos de los trabajos*/
 .galeria {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.item {
+.galeria img {
     width: 300px;
-    text-align: center;
-}
-
-.item img {
-    width: 100%;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
 
-.item img:hover {
+.galeria img:hover {
     transform: scale(1.05);
 }
 
-/*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: white;
+}
+
+/* RESPONSIVE */
 @media (max-width: 600px) {
-    .item {
+    .menu {
+        flex-direction: column;
+    }
+
+    .galeria img {
         width: 100%;
     }
-} 
+}
