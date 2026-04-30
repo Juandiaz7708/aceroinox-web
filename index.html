@@ -2,68 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aceroinox - Trabajos en acero inoxidable</title>
-    <meta name="description" content="Fabricación de muebles, pasamanos y trabajos en acero inoxidable en República Dominicana.">
+    <title>Acerinox - Arte en Acero</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-git 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <h1 class="logo">Acerinox</h1>
-    <ul class="menu">
-        <li><a href="#" onclick="mostrarCategoria('hospitalarios')">Hospitalarios</a></li>
-        <li><a href="#" onclick="mostrarCategoria('decorativos')">Decorativos</a></li>
-        <li><a href="#" onclick="mostrarCategoria('escaleras')">Escaleras</a></li>
-    </ul>
-</nav>
 
-<!-- HERO -->
-<header class="hero">
-    <h2>Trabajos en Acero Inoxidable</h2>
-    <p>Calidad, resistencia y diseño moderno para tu hogar o negocio.</p>
-    <a href="https://wa.me/18090000000" target="_blank" class="btn">Cotiza por WhatsApp</a>
+<header>
+    <h1>Acerinox</h1>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 </header>
 
-<!-- SECCIONES -->
-<section class="contenedor">
-
-    <!-- Hospitalarios -->
-    <div id="hospitalarios" class="categoria">
-        <h3>Hospitalarios</h3>
-        <div class="galeria">
-            <img src="img/hospitalarios/h1.jpg">
-            <img src="img/hospitalarios/h2.jpg">
-            <img src="img/hospitalarios/h3.jpg">
-        </div>
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h2>Arte en Acero Inoxidable</h2>
+        <p>Diseñamos y fabricamos piezas únicas para tu hogar o negocio</p>
+        <button onclick="scrollToSection('contacto')">Solicitar Cotización</button>
     </div>
-
-    <!-- Decorativos -->
-    <div id="decorativos" class="categoria">
-        <h3>Decorativos</h3>
-        <div class="galeria">
-            <img src="img/decorativos/d1.jpg">
-            <img src="img/decorativos/d2.jpg">
-            <img src="img/decorativos/d3.jpg">
-        </div>
-    </div>
-
-    <!-- Escaleras -->
-    <div id="escaleras" class="categoria">
-        <h3>Escaleras</h3>
-        <div class="galeria">
-            <img src="img/escaleras/e1.jpg">
-            <img src="img/escaleras/e2.jpg">
-            <img src="img/escaleras/e3.jpg">
-        </div>
-    </div>
-
 </section>
 
-<!-- FOOTER -->
+<section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="cards">
+        <div class="card">Muebles en acero</div>
+        <div class="card">Cocinas industriales</div>
+        <div class="card">Laboratorios clínicos</div>
+        <div class="card">Pasamanos y balcones</div>
+        <div class="card">Espaldales de cama</div>
+        <div class="card">Trabajos personalizados</div>
+    </div>
+</section>
+
+<section id="trabajos" class="trabajos">
+    <h2>Nuestros Trabajos</h2>
+    <div class="galeria">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+    </div>
+</section>
+
+<section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <textarea placeholder="Describe tu proyecto"></textarea>
+        <button>Enviar</button>
+    </form>
+</section>
+
 <footer>
-    <p>© 2026 Aceroinox | Jarabacoa, República Dominicana</p>
+    <p>© 2026 Acerinox - Todos los derechos reservados</p>
 </footer>
 
 <script src="script.js"></script>
