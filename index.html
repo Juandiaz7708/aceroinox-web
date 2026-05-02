@@ -89,14 +89,46 @@
   <ul>
   <h2>Tipos de trabajos</h2>  <!-- Aqui estan los subtmenus para clasificar los trabajos-->
 
-    <div class="menu-trabajos">
-        <button onclick="mostrarCategoria('hospitalarios')">Hospitalarios</button>
-        <button onclick="mostrarCategoria('decorativos')">Decorativos</button>
-        <button onclick="mostrarCategoria('escaleras')">Escaleras</button>
-        <button onclick="mostrarCategoria('comedores')">Comedores</button>
-        <button onclick="mostrarCategoria('camas')">Camas</button>
-    </div>
-    </ul> 
+<ul>
+<div class="contenedor-categorias">
+
+  <a href="#" class="card" onclick="mostrarCategoria('decorativos')">
+    <img src="img/decorativo/decorativo1.jpeg" alt="Decorativos">
+    <h3>Decorativos</h3>
+    <p>Trabajos modernos en acero inoxidable para embellecer tu hogar.</p>
+  </a>
+
+  <a href="#" class="card" onclick="mostrarCategoria('hospitalarios')">
+    <img src="img/hospital1.jpg" alt="Hospitalarios">
+    <h3>Hospitalarios</h3>
+    <p>Equipos clínicos resistentes y de alta calidad.</p>
+  </a>
+
+  <a href="#" class="card" onclick="mostrarCategoria('escaleras')">
+    <img src="img/escaleras/escalera1.jpeg" alt="Escaleras">
+    <h3>Escaleras</h3>
+    <p>Pasamanos y estructuras elegantes en acero inoxidable.</p>
+  </a>
+
+  <a href="#" class="card" onclick="mostrarCategoria('camas')">
+    <img src="img/camas/camas1.jpeg" alt="Camas">
+    <h3>Camas</h3>
+    <p>Camas resistentes y de alta calidad en acero inoxidable.</p>
+  </a>
+
+  <a href="#" class="card" onclick="mostrarCategoria('comedores')">
+    <img src="img/comedores/comedores1.jpeg" alt="Comedores">
+    <h3>Comedores</h3>
+    <p>Comedores resistentes y de alta calidad en acero inoxidable.</p>
+  </a>
+
+  <a href="#" class="card" onclick="mostrarCategoria('mesas')">
+    <img src="img/mesas/mesas1.jpeg" alt="Mesas">
+    <h3>Mesas</h3>
+    <p>Mesas resistentes y de alta calidad en acero inoxidable.</p>
+  </a>
+</div>
+  </ul> 
 
     <!-- Hospitalarios -->
     <div id="hospitalarios" class="categoria">
@@ -118,7 +150,7 @@
         <p>Credenza en hidrofugo color crema con base en acero inoxidable, en terminación dorada</p>
     </div>
 
-    <!-- Escaleras -->
+    <!-- Galeria de fotos de escaleras -->
     <div id="escaleras" class="categoria">
         <h3>Escaleras</h3>
         <img src="img/escaleras/escalera1.jpeg" alt="Escalera moderna">
@@ -133,6 +165,15 @@
             <img src="img/escaleras/escalera3.jpeg" alt="Escalera con pasamanos">
             <p>Elegancia, una conbinación perfecta entre gold y silver</p>
         </div>
+        
+    <!-- Galeria de fotos de camas -->
+    <div id="camas" class="categoria">
+        <h3>Camas</h3>
+        <img src="img/camas/camas1.jpeg" alt="Cama de acero inoxidable">
+        <p>Cama en acero inoxidable en terminación dorada</p>
+
+        <img src="img/camas/camas2.jpeg" alt="Cama de acero inoxidable">
+        <p>Cama King en acero inoxidable en terminación dorada</p>    
     </div>
 </section>
 
