@@ -30,3 +30,19 @@ function mostrarCategoria(categoriaId) {
 
     document.getElementById(categoriaId).style.display = 'block';
 }
+
+
+function mostrarCategoria(id) {
+    // Oculta todas
+    const categorias = document.querySelectorAll('.categoria');
+    categorias.forEach(cat => {
+        cat.style.display = 'none';
+    });
+
+    // Muestra la seleccionada
+    const activa = document.getElementById(id);
+    if (activa) {
+        activa.style.display = 'block';
+    }
+}
+
