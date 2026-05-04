@@ -156,6 +156,10 @@ footer {
     border-radius: 10px;
 }
 
+#categorias {
+    text-align: center;
+}
+
 .item {
     width: 300px;
     text-align: center;
