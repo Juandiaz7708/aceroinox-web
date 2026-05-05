@@ -150,12 +150,7 @@ footer {
     text-align: center;
 }
 
-/*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
-@media (max-width: 600px) {
-    .item {
-        width: 100%;
-    }
-} 
+
 
 @media (max-width: 768px) {
 
