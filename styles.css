@@ -157,6 +157,22 @@ footer {
     }
 } 
 
+@media (max-width: 768px) {
+
+    .flex-responsive {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+    .acciones-header {
+        position: static;
+    }
+}
+
 .contenedor-categorias {
     display: flex;
     justify-content: center;
