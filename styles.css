@@ -8,21 +8,17 @@ body {
 header {
   background:
     linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
-    url('img/header-acero.jpg');
+    url('img/logoacerinox.jpg');
 
   background-size: cover;
   background-position: center;
 
   background-color: #2c3e50;
   color: white;
-  padding: 180px 20px 80px;
+  padding: 10px;
   text-align: center;
   position: relative;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
 }
 
 section {
@@ -67,7 +63,6 @@ form button:hover {
 
 
 footer {
-
   background:
   linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7));
   
@@ -76,7 +71,7 @@ footer {
 
   background-color: #2c3e50;
   color: white;
-  padding: 1px 20px 80px;
+  padding: 20px;
   text-align: center;
   position: relative;
 }
@@ -149,18 +144,7 @@ footer {
 }
 
 /*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
-@media (max-width: 600px) {
-    .item {
-        width: 100%;
-    }
-} 
-
 @media (max-width: 768px) {
-
-    .flex-responsive {
-        flex-direction: column;
-        align-items: center;
-    }
 
     /* BOTÓN HAMBURGUESA */
     .menu-toggle {
@@ -203,10 +187,6 @@ footer {
         width: 220px;
 
         text-align: center;
-    }
-
-    .header-centro {
-        margin-top: 60px;
     }
 }
 
@@ -406,7 +386,7 @@ las categorías de galerias de fotos) */
     color: #333;
 }
 
-/* BOTÓN VOLVER */
+/* ESTILO DE BOTÓN VOLVER */
 header a {
     display: inline-block;
     margin-top: 10px;
@@ -449,6 +429,5 @@ html {
 }
 
 .redes-sociales a {
-  color: #444;
   color: purple; 
 }
