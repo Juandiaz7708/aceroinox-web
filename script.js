@@ -3,20 +3,6 @@ document.getElementById("formularioContacto").addEventListener("submit", functio
   alert("¡Gracias por contactarnos! Te responderemos pronto.");
 });
 
-function mostrarCategoria(id) {
-    // Oculta todas
-    const categorias = document.querySelectorAll('.categoria');
-    categorias.forEach(cat => {
-        cat.style.display = 'none';
-    });
-
-    // Muestra la seleccionada
-    const activa = document.getElementById(id);
-    if (activa) {
-        activa.style.display = 'block';
-    }
-}
-
 const menuToggle = document.getElementById('menu-toggle');
 
 const accionesHeader = document.querySelector('.acciones-header');

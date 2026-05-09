@@ -8,7 +8,7 @@ body {
 header {
   background:
     linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
-    url('img/logoacerinox.jpg');
+    url('img/logo.jpg');
 
   background-size: cover;
   background-position: center;
