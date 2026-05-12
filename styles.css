@@ -144,7 +144,14 @@ footer {
 }
 
 /*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
-@media (max-width: 768px) {
+
+
+    
+
+    
+
+    /* MENÚ EN COMPUTADORA */
+@media (min-width: 769px) {
 
     /* BOTÓN HAMBURGUESA */
     .menu-toggle {
@@ -161,14 +168,11 @@ footer {
 
     }
 
-    /* MENÚ EN COMPUTADORA */
-@media (min-width: 769px) {
-
     .acciones-header {
 
         display: flex;
     }
-}
+
 
     /* CUANDO SE ABRE */
     .acciones-header.active {
