@@ -154,17 +154,11 @@ footer {
     /* MENÚ OCULTO */
     .acciones-header {
 
-        display: none;
-        flex-direction: column;
-        /*position: absolute;*/
-        top: 80px;
-        right: 20px;
-        background: rgba(15,15,15,0.95);
-        backdrop-filter: blur(10px);
-        padding: 20px;
-        border-radius: 15px;
-        gap: 15px;
-        z-index: 999;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    gap: 15px;
+
     }
 
     /* CUANDO SE ABRE */
