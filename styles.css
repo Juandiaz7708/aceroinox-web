@@ -19,6 +19,18 @@ header {
   text-align: center;
   position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-contenido {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
 }
 
 section {
@@ -116,7 +128,7 @@ footer {
 
 /* ESTILO REDES SOCIALES */
 .redes-sociales {
-    margin: 40px;
+    margin: 0;
     margin-top: 15px;
     margin-bottom: 18px;
     text-align: center;
@@ -149,25 +161,47 @@ footer {
     color: #E1306C;
 }
 
-/*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
-@media (min-width: 769px) {
 
-    /* BOTÓN HAMBURGUESA */
+/*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
+
+
+@media (max-width: 768px) {
+
     .menu-toggle {
         display: block;
     }
 
-    /* MENÚ OCULTO */
     .acciones-header {
 
-    display: flex;  
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    gap: 15px;
+        display: none;
 
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 70px;
+
+        right: 20px;
+
+        background: rgba(44, 62, 80, 0.95);
+
+        padding: 20px;
+
+        border-radius: 15px;
+
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+        gap: 15px;
     }
 
+    .acciones-header.active {
+        display: flex;
+    }
+
+    .btn-header {
+        width: 200px;
+        text-align: center;
+    }
 }
 
 .contenedor-categorias {
@@ -260,7 +294,6 @@ footer {
     .menu-toggle:hover {
     background: rgba(255,255,255,0.2);
     transform: scale(1.05);
-    display: block;
     }
 
     .btn-header {
