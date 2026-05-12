@@ -161,6 +161,15 @@ footer {
 
     }
 
+    /* MENÚ EN COMPUTADORA */
+@media (min-width: 769px) {
+
+    .acciones-header {
+
+        display: flex;
+    }
+}
+
     /* CUANDO SE ABRE */
     .acciones-header.active {
         display: flex;
