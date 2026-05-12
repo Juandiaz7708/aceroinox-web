@@ -348,3 +348,19 @@ header a {
 html {
   scroll-behavior: smooth;
 }
+
+/* IMAGEN PRINCIPAL */
+.imagen-principal {
+
+    width: 96.82%;
+
+    height: 450px;
+
+    background-image: url('img/logoacerinox.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
