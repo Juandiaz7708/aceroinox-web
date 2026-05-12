@@ -114,43 +114,20 @@ footer {
   }
 }
 
+/* Estilo botones redes sociales */
 .redes-sociales {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
-.redes-sociales a {
-  color: #444;
-  font-size: 48px;
-  margin: 0 20px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.redes-sociales a:hover {
-  transform: scale(1.2);
-}
-
-.redes-sociales a:first-child:hover {
+  /*color: purple */ 
   color: #25D366; /* WhatsApp */
-}
-
-.redes-sociales a:last-child:hover {
   color: #E1306C; /* Instagram */
-}
-
-#categorias {
-    text-align: center;
+  font-size: 35px;
+  margin: 40px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  
 }
 
 /*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
-
-
-    
-
-    
-
-    /* MENÚ EN COMPUTADORA */
 @media (min-width: 769px) {
 
     /* BOTÓN HAMBURGUESA */
@@ -161,6 +138,7 @@ footer {
     /* MENÚ OCULTO */
     .acciones-header {
 
+    display: flex;  
     position: absolute;
     right: 20px;
     top: 20px;
@@ -168,23 +146,6 @@ footer {
 
     }
 
-    .acciones-header {
-
-        display: flex;
-    }
-
-
-    /* CUANDO SE ABRE */
-    .acciones-header.active {
-        display: flex;
-    }
-
-    .btn-header {
-
-        width: 220px;
-
-        text-align: center;
-    }
 }
 
 .contenedor-categorias {
@@ -229,19 +190,14 @@ footer {
 
 /*Estilo de los botones del menu de caberzera*/
 .btn-header {
+
     text-decoration: none;
     padding: 10px 18px;
-
     border-radius: 25px;
-
     background-color: transparent;
-
     border: 2px solid #00c0ff;
-
     color: #00c0ff;
-
     font-weight: bold;
-
     transition: all 0.3s ease;
 }
 
@@ -258,77 +214,33 @@ footer {
 .menu-toggle {
 
     display: none;
-
     width: 50px;
-
     height: 50px;
-
     background: rgba(255,255,255,0.1);
-
     border: 2px solid rgba(255,255,255,0.3);
-
     border-radius: 12px;
-
     backdrop-filter: blur(10px);
-
     color: white;
-
     font-size: 28px;
-
     line-height: 46px;
-
     text-align: center;
-
     position: absolute;
-
     top: 20px;
-
     right: 20px;
-
     cursor: pointer;
-
     z-index: 1000;
-
     transition: all 0.3s ease;
 }
 
-.menu-toggle:hover {
 
-    background: rgba(255,255,255,0.2);
-
-    transform: scale(1.05);
-}
 
 /* MODO MÓVIL */
 @media (max-width: 768px) {
 
-    .menu-toggle {
-        display: block;
-    }
-
-    .acciones-header {
-
-        display: none;
-
-        flex-direction: column;
-
-        position: absolute;
-
-        top: 70px;
-
-        right: 20px;
-
-        background: rgba(44, 62, 80, 0.95);
-
-        padding: 20px;
-
-        border-radius: 15px;
-
-        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    }
-
-    .acciones-header.active {
-        display: flex;
+    .menu-toggle:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+    display: block;
     }
 
     .btn-header {
@@ -395,14 +307,6 @@ header a {
     transition: 0.3s;
 }
 
-/* Botones del header, afecta donde estan los botones quienes somos y cotización */
-.acciones-header {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: flex;
-    gap: 15px;
-}
 
 /* Aqui esta el estilo de las paginas segundarias (Quienes somos) y (Coitiza con nosotros)*/
 .contenido {
@@ -423,8 +327,4 @@ header a {
 
 html {
   scroll-behavior: smooth;
-}
-
-.redes-sociales a {
-  color: purple; 
 }
