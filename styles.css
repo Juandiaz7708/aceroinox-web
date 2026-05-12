@@ -114,17 +114,39 @@ footer {
   }
 }
 
-/* Estilo botones redes sociales */
+/* ESTILO REDES SOCIALES */
 .redes-sociales {
+    margin: 40px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    text-align: center;
+}
 
-  /*color: purple */ 
-  color: #25D366; /* WhatsApp */
-  color: #E1306C; /* Instagram */
-  font-size: 35px;
-  margin: 40px;
-  margin-top: 1px;
-  margin-bottom: 10px;
-  
+/* COLOR NORMAL */
+.redes-sociales a {
+
+    color: purple;
+    font-size: 35px;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER GENERAL */
+.redes-sociales a:hover {
+
+    transform: scale(1.2);
+}
+
+/* WHATSAPP */
+.redes-sociales a:first-child:hover {
+
+    color: #25D366;
+}
+
+/* INSTAGRAM */
+.redes-sociales a:last-child:hover {
+
+    color: #E1306C;
 }
 
 /*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
@@ -231,8 +253,6 @@ footer {
     z-index: 1000;
     transition: all 0.3s ease;
 }
-
-
 
 /* MODO MÓVIL */
 @media (max-width: 768px) {
