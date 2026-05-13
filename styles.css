@@ -164,45 +164,23 @@ footer {
 
 /*Codigo CSS para diseño responsive en la galeria de imagenes de los trabajos*/
 
+@media (min-width: 769px) {
 
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
+      /* MENÚ OCULTO */
     .acciones-header {
 
-        display: none;
-
-        flex-direction: column;
-
+        display: flex;
         position: absolute;
-
-        top: 70px;
-
         right: 20px;
-
-        background: rgba(44, 62, 80, 0.95);
-
-        padding: 20px;
-
-        border-radius: 15px;
-
-        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-
+        top: 20px;
         gap: 15px;
     }
 
-    .acciones-header.active {
-        display: flex;
-    }
-
-    .btn-header {
-        width: 200px;
-        text-align: center;
+    .menu-toggle {
+        display: none;
     }
 }
+
 
 .contenedor-categorias {
     display: flex;
