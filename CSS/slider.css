@@ -1,0 +1,40 @@
+/* SLIDER IMAGENES DE LA PAGINA PRINCIPAL AL INICIO */ 
+.slider {
+
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* CADA IMAGEN */
+.slide {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* IMAGEN ACTIVA */
+
+.slide.active {
+
+    opacity: 1;
+}
+
+/* IMÁGENES */
+
+.slide img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider {
+
+    margin: 0;
+    padding: 0;
+}
