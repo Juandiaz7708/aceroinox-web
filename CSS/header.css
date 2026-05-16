@@ -1,0 +1,96 @@
+/* HEADER PRINCIPAL */
+
+header {
+  background:
+    linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
+    url('../img/logo.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-color: #2c3e50;
+
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+
+/* CONTENEDOR DEL HEADER */
+
+.header-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+
+/* BOTONES */
+
+.acciones-header {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-header {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid #00c0ff;
+  color: #00c0ff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-header:hover {
+  background-color: rgba(0, 192, 255, 0.15);
+  color: white;
+  border-color: white;
+}
+
+/* REDES */
+
+.redes-sociales {
+  display: flex;
+  gap: 10px;
+}
+
+.redes-sociales a {
+  color: purple;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+}
+
+.redes-sociales a:first-child:hover {
+  color: #25D366;
+}
+
+.redes-sociales a:last-child:hover {
+  color: #E1306C;
+}
+
+/* MENÚ HAMBURGUESA */
+
+.menu-toggle {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 28px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
