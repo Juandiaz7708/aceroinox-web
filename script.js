@@ -12,3 +12,25 @@ menuToggle.addEventListener('click', () => {
     accionesHeader.classList.toggle('active');
 
 });
+
+const slides = document.querySelectorAll('.slide');
+
+let index = 0;
+
+function cambiarSlide() {
+
+    slides[index].classList.remove('active');
+
+    index++;
+
+    if(index >= slides.length) {
+
+        index = 0;
+    }
+
+    slides[index].classList.add('active');
+}
+
+/* CAMBIA CADA 4 SEGUNDOS */
+
+setInterval(cambiarSlide, 4000);
