@@ -15,10 +15,8 @@
     }
 }
 
-/* =========================
-   MODO MOVIL
-========================= */
-@media (max-width: 768px) {
+/* MODO MOVIL */
+@media (max-width: 769px) {
 
     /* BOTON HAMBURGUESA */
     .menu-toggle {
