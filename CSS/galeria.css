@@ -81,3 +81,32 @@
     font-size: 15px;
     color: #333;
 }
+
+/* Galería */
+#galeria {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.cinta-carrusel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.cinta {
+  display: flex;
+  width: max-content;
+  animation: desplazar 30s linear infinite;
+}
+
+.cinta img {
+  width: 450px;
+  height: 380px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
