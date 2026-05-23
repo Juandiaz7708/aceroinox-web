@@ -1,80 +1,54 @@
+/* =============================================
+   FORMULARIOS.CSS — Estilos del formulario
+   ============================================= */
+
 form {
-  max-width: 500px;
+  max-width: 520px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 14px;
 }
 
-form input, form textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+form input,
+form textarea {
+  padding: 13px 16px;
+  border: 1.5px solid #ccd4de;
+  border-radius: 8px;
+  font-size: 0.97rem;
+  font-family: inherit;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  background: white;
+  color: #2d3436;
 }
 
-form button {
-  background-color: #2980b9;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #00c0ff;
+  box-shadow: 0 0 0 3px rgba(0, 192, 255, 0.15);
 }
 
-form button:hover {
-  background-color: #1f6391;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+form textarea {
+  min-height: 130px;
+  resize: vertical;
 }
 
 form button {
-  background-color: #2980b9;
+  background-color: #1a3a5c;
   color: white;
-  padding: 10px;
+  padding: 13px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
-  background-color: #1f6391;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background-color: #2980b9;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #1f6391;
+  background-color: #00c0ff;
+  color: #0d1b2a;
+  transform: translateY(-2px);
 }

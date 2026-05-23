@@ -1,41 +1,97 @@
+/* =============================================
+   CARDS.CSS — Tarjetas de categorías y galerías
+   ============================================= */
 
-.card-general {
-    background: white;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    max-width: 800px;
-    margin: 0 auto;
-} 
+/* CONTENEDOR DE CATEGORÍAS */
+.contenedor-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 30px 20px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* TARJETA DE CATEGORÍA */
 .card {
-    width: 280px;
-    text-decoration: none;
-    color: #333;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
+  width: 280px;
+  text-decoration: none;
+  color: #333;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.13);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
 }
 
 .card h3 {
-    margin: 15px;
-    color: #2c3e50;
+  margin: 14px 16px 6px;
+  color: #1a3a5c;
+  font-size: 1.05rem;
 }
 
 .card p {
-    margin: 0 15px 15px;
-    font-size: 14px;
+  margin: 0 16px 16px;
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.5;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+/* CARD GENERAL (páginas internas) */
+.card-general {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.13);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* GALERÍA INTERNA (páginas de categoría) */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.13);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.22);
+}
+
+.item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.item p {
+  padding: 14px 16px 4px;
+  font-size: 0.95rem;
+  color: #444;
 }

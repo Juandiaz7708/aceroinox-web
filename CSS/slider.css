@@ -1,40 +1,32 @@
-/* SLIDER IMAGENES DE LA PAGINA PRINCIPAL AL INICIO */ 
-.slider {
+/* =============================================
+   SLIDER.CSS — Slider de imágenes principal
+   ============================================= */
 
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* CADA IMAGEN */
+/* CADA SLIDE */
 .slide {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-/* IMAGEN ACTIVA */
-
+/* SLIDE ACTIVO */
 .slide.active {
-
-    opacity: 1;
+  opacity: 1;
 }
 
-/* IMÁGENES */
-
+/* IMAGEN DENTRO DEL SLIDE */
 .slide img {
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slider {
-
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
