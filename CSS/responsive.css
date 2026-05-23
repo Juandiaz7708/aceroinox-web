@@ -23,8 +23,9 @@
 
   /* Header en columna */
   .header-contenido {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     gap: 12px;
   }
 
