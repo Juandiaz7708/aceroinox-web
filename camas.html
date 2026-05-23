@@ -1,47 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Camas - Aceroinox</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/galeria.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajos de Camas - Aceroinox.rd</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/cards.css">
+  <link rel="stylesheet" href="CSS/galeria.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Botón volver fijo esquina superior izquierda */
+    .btn-volver {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      z-index: 999;
+      text-decoration: none;
+      padding: 9px 16px;
+      border-radius: 25px;
+      background-color: rgba(0,0,0,0.45);
+      backdrop-filter: blur(8px);
+      border: 2px solid #00c0ff;
+      color: #00c0ff;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .btn-volver:hover {
+      background-color: #00c0ff;
+      color: #0d1b2a;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Trabajos de Camas</h1>
-    <a href="index.html#categorias" class="btn-header">← Volver</a>
+<!-- Botón volver fijo -->
+<a href="index.html#categorias" class="btn-volver">← Volver</a>
+
+<header class="header">
+  <div class="header-contenido">
+
+    <!-- Botón hamburguesa (móvil) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Título -->
+    <div class="hero-contenido">
+      <h1>Trabajos de Camas</h1>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class="acciones-header">
+      <a href="quienes-somos.html" class="btn-header">Quiénes somos</a>
+      <a href="cotizacion.html" class="btn-header">Cotiza con nosotros</a>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="redes-sociales">
+      <a href="https://wa.me/18293905647" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/acero.inox.rd" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
 </header>
 
 <section class="galeria">
-    <div class="item">
-        <img src="img/camas/camas1.jpeg">
-        <p>Cama en acero inoxidable dorado</p>
-    </div>
-
-    <div class="item">
-        <img src="img/camas/camas2.jpeg">
-        <p>Cama King en acero inoxidable</p>
-    </div>
-
-    <div class="item">
-        <img src="img/camas/camas3.jpeg">
-        <p>Cama en acero inoxidable con diseño moderno</p>
-
-    <div class="item">
-        <img src="img/camas/camas4.jpeg">
-        <p>Cama en acero inoxidable con detalles decorativos</p>
-
-    <div class="item">
-        <img src="img/camas/camas5.jpeg">
-        <p>Cama en acero inoxidable con diseño minimalista</p>    
+  <div class="item">
+    <img src="img/camas/camas1.jpeg" alt="Cama dorada">
+    <p>Cama en acero inoxidable dorado.</p>
+  </div>
+  <div class="item">
+    <img src="img/camas/camas2.jpeg" alt="Cama King">
+    <p>Cama King en acero inoxidable.</p>
+  </div>
+  <div class="item">
+    <img src="img/camas/camas3.jpeg" alt="Cama moderna">
+    <p>Cama en acero inoxidable con diseño moderno.</p>
+  </div>
+  <div class="item">
+    <img src="img/camas/camas4.jpeg" alt="Cama decorativa">
+    <p>Cama en acero inoxidable con detalles decorativos.</p>
+  </div>
+  <div class="item">
+    <img src="img/camas/camas5.jpeg" alt="Cama minimalista">
+    <p>Cama en acero inoxidable con diseño minimalista.</p>
+  </div>
 </section>
 
-</body>
-
 <footer>
-  <p>&copy; 2026 Acero Inoxidable Profesional - Todos los derechos reservados</p>
+  <p>&copy; 2026 Aceroinox.rd &mdash; Todos los derechos reservados</p>
 </footer>
 
+<script src="script.js"></script>
+</body>
 </html>
