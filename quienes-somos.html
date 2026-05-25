@@ -2,16 +2,59 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Quiénes somos - Aceroinox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes somos - Aceroinox RD</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/header.css">
-  <link rel="stylesheet" href="CSS/quienes-somos.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .contenido p {
+      font-size: 1.05rem;
+      color: #555;
+      line-height: 1.85;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>¿Quiénes somos?</h1>
-  <a href="index.html" class="btn-header">← Volver</a>
+<!-- Botón volver fijo -->
+<a href="index.html" class="btn-header btn-volver">← Volver</a>
+
+<header class="header">
+  <div class="header-contenido">
+
+    <!-- Botón hamburguesa (móvil) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Título -->
+    <div class="hero-contenido">
+      <h1>¿Quiénes somos?</h1>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class="acciones-header">
+      <a href="index.html#categorias" class="btn-header">Ver trabajos</a>
+      <a href="cotizacion.html" class="btn-header">Cotiza con nosotros</a>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="redes-sociales">
+      <a href="https://wa.me/18293905647" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/acero.inox.rd" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
 </header>
 
 <section class="contenido">
@@ -20,17 +63,16 @@
     En Aceroinox somos especialistas en trabajos en acero inoxidable en Jarabacoa,
     ofreciendo soluciones personalizadas con altos estándares de calidad.
   </p>
-
   <p>
     Nos enfocamos en la fabricación de muebles, pasamanos, estructuras y
     trabajos industriales, garantizando durabilidad, estética y precisión.
   </p>
 </section>
 
-</body>
-
 <footer>
-  <p>&copy; 2026 Acero Inoxidable Profesional - Todos los derechos reservados</p>
+  <p>&copy; 2026 Aceroinox RD &mdash; Todos los derechos reservados</p>
 </footer>
 
+<script src="script.js"></script>
+</body>
 </html>
