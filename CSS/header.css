@@ -44,6 +44,7 @@ header {
   align-items: center;
 }
 
+/* Botones de menus Quiénes somos y Cotiza con nosotros */
 .btn-header {
   text-decoration: none;
   padding: 10px 20px;
@@ -131,11 +132,11 @@ header {
 /*Botón volver de todos los menus*/
  .btn-volver {
       position: fixed;
-      top: 16px;
+      top: 29px;
       left: 16px;
       z-index: 999;
       text-decoration: none;
-      padding: 9px 16px;
+      padding: 10px 20px;
       border-radius: 25px;
       background-color: rgba(0,0,0,0.45);
       backdrop-filter: blur(8px);
@@ -147,6 +148,7 @@ header {
       white-space: nowrap;
     }
     .btn-volver:hover {
-      background-color: #00c0ff;
-      color: #0d1b2a;
+      background-color: rgba(0, 192, 255, 0.18);
+      color: white;
+      border-color: white;
     }
