@@ -27,7 +27,7 @@ header {
 /* TÍTULO / LOGO */
 .hero-contenido {
   flex: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-contenido h1 {
@@ -56,6 +56,8 @@ header {
   font-size: 0.9rem;
   transition: all 0.3s ease;
   white-space: nowrap;
+  width: 180px;
+  text-align: center;
 }
 
 .btn-header:hover {
@@ -118,10 +120,10 @@ header {
   width: 48px;
   height: 48px;
   background: rgba(255,255,255,0.1);
-  border: 2px solid rgba(255,255,255,0.35);
+  border: 2px solid #00c0ff;
   border-radius: 12px;
   backdrop-filter: blur(10px);
-  color: white;
+  color: #00c0ff;
   font-size: 26px;
   align-items: center;
   justify-content: center;
