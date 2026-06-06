@@ -32,6 +32,9 @@
   /* Hero centrado */
   .hero-contenido {
     text-align: center;
+    flex: 1;
+    margin-left: 3%;
+    padding-right: 60px;
   }
 
   .hero-contenido h1 {
