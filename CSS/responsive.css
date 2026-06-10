@@ -31,11 +31,12 @@
 
   /* Hero centrado */
   .hero-contenido {
-    text-align: center;
-    flex: 1;
-    margin-left: 0;
-    padding-right: 50px;
-  }
+  text-align: center;
+  flex: 1;
+  margin: 0 auto;
+  margin-left: 55px;
+  padding: 0;
+}
 
   .hero-contenido h1 {
    font-size: 1.7rem;
