@@ -10,7 +10,7 @@ header {
   background-position: center;
   background-color: #1a3a5c;
   color: white;
-  padding: 30px 18px;
+  padding: 10px 30px 18px;
   position: relative;
 }
 
@@ -35,6 +35,7 @@ header {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  margin-top: 60px;
 }
 
 /* BOTONES DEL MENÚ */
@@ -134,7 +135,7 @@ header {
 /*Botón volver de todos los menus*/
  .btn-volver {
       position: fixed;
-      top: 29px;
+      top: 21px;
       left: 16px;
       z-index: 999;
       text-decoration: none;
