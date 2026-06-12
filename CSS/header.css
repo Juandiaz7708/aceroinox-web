@@ -10,7 +10,7 @@ header {
   background-position: center;
   background-color: #1a3a5c;
   color: white;
-  padding: 10px 30px 18px;
+  padding: 30px 18px;
   position: relative;
 }
 
@@ -135,7 +135,7 @@ header {
 /*Botón volver de todos los menus*/
  .btn-volver {
       position: fixed;
-      top: 21px;
+      top: 31px;
       left: 16px;
       z-index: 999;
       text-decoration: none;

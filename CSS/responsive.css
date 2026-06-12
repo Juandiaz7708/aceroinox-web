@@ -24,7 +24,7 @@
   /* Header en columna */
   .header-contenido {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     gap: 12px;
   }
@@ -35,6 +35,7 @@
   flex: 1;
   margin: 0 auto;
   margin-left: 55px;
+  margin-top: -52px;
   padding: 0;
 }
 
