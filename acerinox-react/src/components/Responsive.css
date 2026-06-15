@@ -1,0 +1,121 @@
+/* =============================================
+   RESPONSIVE.CSS — Diseño adaptable
+   ============================================= */
+
+/* ── ESCRITORIO (769px en adelante) ── */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .acciones-header {
+    display: flex !important;
+  }
+
+   /* Título en escritorio */
+  .hero-contenido {
+    margin-top: -15px;
+  }
+}
+
+/* ── MÓVIL (hasta 768px) ── */
+@media (max-width: 768px) {
+
+  /* Menú hamburguesa visible */
+  .menu-toggle {
+    display: flex !important;
+  }
+
+  /* Header en columna */
+  .header-contenido {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 12px;
+  }
+
+  /* Hero centrado */
+  .hero-contenido {
+  text-align: center;
+  flex: 1;
+  margin: 0 auto;
+  margin-left: 55px;
+  margin-top: -52px;
+  padding: 0;
+}
+
+.hero-contenido h1 {
+   font-size: 2rem;
+  }
+
+  /* Título en páginas de categorías de trabajo*/
+  .hero-categoria {
+  text-align: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-top: 55px;
+  padding: 0;
+  font-size: 0.90rem;
+  }
+
+  /* Menú oculto por defecto */
+  .acciones-header {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  /* JS agrega .active para mostrar */
+  .acciones-header.active {
+    display: flex;
+  }
+
+  .btn-header {
+    width: 230px;
+    text-align: center;
+  }
+
+  /* Redes centradas */
+  .redes-sociales {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* Slider más pequeño */
+  .slider {
+    height: 260px;
+  }
+
+  /* Cards de categorías: una por fila en pantallas muy pequeñas */
+  .contenedor-categorias {
+    gap: 18px;
+    padding: 20px 12px 40px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  /* Carrusel de galería */
+  .cinta img {
+    width: 260px;
+    height: 210px;
+  }
+
+  /* Galería interna */
+  .galeria {
+    padding: 20px 14px;
+    gap: 16px;
+  }
+}
+
+/* ── TABLET (480px–768px) ── */
+@media (min-width: 480px) and (max-width: 768px) {
+  .card {
+    width: 46%;
+  }
+}
