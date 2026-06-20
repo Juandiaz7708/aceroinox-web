@@ -1,0 +1,16 @@
+/* Footer */
+footer {
+  background: linear-gradient(rgba(15,15,15,0.85), rgba(15,15,15,0.85)),
+              #1a3a5c;
+  color: var(--blanco);
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+/* Animación del carrusel */
+@keyframes desplazar {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

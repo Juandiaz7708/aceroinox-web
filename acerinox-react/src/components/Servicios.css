@@ -1,0 +1,25 @@
+* Lista de servicios */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+/* Sección servicios */
+#servicios {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#servicios p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+#servicios ul {
+  display: inline-block;
+  text-align: left;
+}
