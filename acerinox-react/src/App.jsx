@@ -1,10 +1,17 @@
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
+import Slider from "./components/Slider";
+import Categorias from "./components/Categorias";
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <Slider />
+        <Categorias />
+      </div>
+    </BrowserRouter>
   );
 }
 
