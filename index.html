@@ -1,52 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Acerinox - Arte en Acero</title>
-    <link rel="stylesheet" href="styles.css">
+
+  <!-- Palabras clave para SEO -->
+  <title>Aceroinox.rd — Muebles y trabajos en acero inoxidable</title>
+  <meta name="description" content="Fabricación de muebles, pasamanos y trabajos en acero inoxidable en República Dominicana.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="CSS/styles.css?v=1">
+  <link rel="stylesheet" href="CSS/header.css?v=1">
+  <link rel="stylesheet" href="CSS/slider.css?v=1">
+  <link rel="stylesheet" href="CSS/cards.css?v=1">
+  <link rel="stylesheet" href="CSS/galeria.css?v=1">
+  <link rel="stylesheet" href="CSS/formularios.css?v=1">
+  <link rel="stylesheet" href="CSS/responsive.css?v=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
 
-<header>
-    <h1>Acerinox</h1>
-    <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#trabajos">Trabajos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+  <!-- ══ HEADER ══ -->
+  <header class="header">
+    <div class="header-contenido">
 
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h2>Arte en Acero Inoxidable</h2>
-        <p>Diseñamos y fabricamos piezas únicas para tu hogar o negocio</p>
-        <button onclick="scrollToSection('contacto')">Solicitar Cotización</button>
+      <!-- Título -->
+      <div class="hero-contenido">
+        <h1>Aceroinox.rd</h1>
+      </div>
+
+       <!-- Botón hamburguesa (móvil) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!-- Botones de navegación -->
+      <div class="acciones-header">
+        <a href="quienes-somos.html" class="btn-header">Quiénes somos</a>
+        <a href="cotizacion.html" class="btn-header">Cotiza con nosotros</a>
+        <a href="#categorias" class="btn-header">Proyectos</a>
+        <a href="#servicios" class="btn-header">Servicios</a>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="redes-sociales">
+        <a href="https://wa.me/18293905647" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/acero.inox.rd" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
     </div>
-</section>
+  </header>
 
-<section id="servicios" class="servicios">
-    <h2>Servicios</h2>
-    <div class="cards">
-        <div class="card">Muebles en acero</div>
-        <div class="card">Cocinas industriales</div>
-        <div class="card">Laboratorios clínicos</div>
-        <div class="card">Pasamanos y balcones</div>
-        <div class="card">Espaldales de cama</div>
-        <div class="card">Trabajos personalizados</div>
+  <!-- ══ SLIDER ══ -->
+  <section class="slider">
+    <div class="slide active">
+      <img src="img/logoacerinox.jpg" alt="Aceroinox logo">
     </div>
-</section>
-
-<section id="trabajos" class="trabajos">
-    <h2>Nuestros Trabajos</h2>
-    <div class="galeria">
-        <img src="img1.jpg">
-        <img src="img2.jpg">
-        <img src="img3.jpg">
+    <div class="slide">
+      <img src="img/trabajo1.jpg" alt="Trabajo en acero 1">
     </div>
-</section>
+    <div class="slide">
+      <img src="img/trabajo3.jpg" alt="Trabajo en acero 3">
+    </div>
+    <div class="slide">
+      <img src="img/trabajo4.jpg" alt="Trabajo en acero 4">
+    </div>
+  </section>
 
-<section id="contacto" class="contacto">
+  <!-- ══ SERVICIOS ══ -->
+  <section id="servicios">
+    <p>Fabricamos piezas únicas en acero inoxidable para hogares, negocios e industrias.
+       Fabricación de muebles y equipos en acero inoxidable
+       trabajamos lo industrial como decorativo</p>
+
+    <h2>¿Qué ofrecemos?</h2>
+    <ul>
+      <li>Muebles personalizados en acero inoxidable</li>
+      <li>Pasamanos para escaleras y balcones</li>
+      <li>Mesas y fregaderos industriales</li>
+      <li>Equipos para carnicerías y laboratorios clínicos</li>
+      <li>¡Y cualquier idea que tengas, la hacemos realidad!</li>
+    </ul>
+  </section>
+
+  <!-- ══ CATEGORÍAS ══ -->
+  <section id="categorias">
+    <h2>Categorías de trabajos</h2>
+  </section>
+
+  <div class="contenedor-categorias">
+    <a href="decorativo.html" class="card" id="decorativos">
+      <img src="img/decorativo/decorativo3.jpeg" alt="Decorativos">
+      <h3>Decorativos</h3>
+      <p>Trabajos modernos en acero inoxidable para embellecer tu hogar.</p>
+    </a>
+    <a href="hospitalarios.html" class="card" id="hospitalarios">
+      <img src="img/trabajo2.jpg" alt="Hospitalarios">
+      <h3>Hospitalarios</h3>
+      <p>Trabajos hospitalarios resistentes y de alta calidad.</p>
+    </a>
+    <a href="escaleras.html" class="card" id="escaleras">
+      <img src="img/escaleras/escalera1.jpeg" alt="Escaleras">
+      <h3>Escaleras</h3>
+      <p>Pasamanos y estructuras elegantes en acero inoxidable.</p>
+    </a>
+    <a href="camas.html" class="card" id="camas">
+      <img src="img/camas/camas1.jpeg" alt="Camas">
+      <h3>Camas</h3>
+      <p>Camas resistentes y de alta calidad en acero inoxidable.</p>
+    </a>
+    <a href="comedores.html" class="card" id="comedores">
+      <img src="img/comedores/comedores1.jpeg" alt="Comedores">
+      <h3>Comedores</h3>
+      <p>Comedores resistentes y de alta calidad en acero inoxidable.</p>
+    </a>
+    <a href="mesas.html" class="card" id="mesas">
+      <img src="img/mesas/mesas1.jpeg" alt="Mesas">
+      <h3>Mesas</h3>
+      <p>Mesas resistentes y de alta calidad en acero inoxidable.</p>
+    </a>
+  </div>
+
+  <!-- ══ GALERÍA CARRUSEL ══ -->
+  <section id="galeria">
+    <h2>Galería de trabajos</h2>
+    <div class="cinta-carrusel">
+      <div class="cinta">
+        <img src="img/trabajo1.jpg" alt="Trabajo 1">
+        <img src="img/trabajo2.jpg" alt="Trabajo 2">
+        <img src="img/trabajo3.jpg" alt="Trabajo 3">
+        <img src="img/trabajo4.jpg" alt="Trabajo 4">
+        <!-- Duplicadas para animación infinita -->
+        <img src="img/trabajo1.jpg" alt="Trabajo 1">
+        <img src="img/trabajo2.jpg" alt="Trabajo 2">
+        <img src="img/trabajo3.jpg" alt="Trabajo 3">
+        <img src="img/trabajo4.jpg" alt="Trabajo 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACTO ══ -->
+  <section id="contacto">
+>>>>>>> main
     <h2>Contáctanos</h2>
     <form>
         <input type="text" placeholder="Nombre">
@@ -56,9 +156,11 @@
     </form>
 </section>
 
-<footer>
-    <p>© 2026 Acerinox - Todos los derechos reservados</p>
-</footer>
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>&copy; 2026 Aceroinox.rd &mdash; Todos los derechos reservados</p>
+  </footer>
+>>>>>>> main
 
 <script src="script.js"></script>
 </body>

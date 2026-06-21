@@ -1,0 +1,43 @@
+/* =============================================
+   GALERIA.CSS — Carrusel y sección galería
+   ============================================= */
+
+/* SECCIÓN GALERÍA */
+#galeria {
+  padding: 50px 20px;
+  background-color: #eef1f5;
+  text-align: center;
+}
+
+#galeria h2 {
+  margin-bottom: 24px;
+}
+
+/* CONTENEDOR DEL CARRUSEL */
+.cinta-carrusel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* CINTA QUE SE MUEVE */
+.cinta {
+  display: flex;
+  width: max-content;
+  animation: desplazar 30s linear infinite;
+}
+
+.cinta:hover {
+  animation-play-state: paused;
+}
+
+/* IMÁGENES DEL CARRUSEL */
+.cinta img {
+  width: 420px;
+  height: 360px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  transition: transform 0.3s ease;
+}

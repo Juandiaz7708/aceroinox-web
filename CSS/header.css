@@ -1,0 +1,157 @@
+/* =============================================
+   HEADER.CSS — Cabecera principal
+   ============================================= */
+
+header {
+  background:
+    linear-gradient(rgba(15, 15, 15, 0.72), rgba(15, 15, 15, 0.72)),
+    url('../img/logoacerinox.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #1a3a5c;
+  color: white;
+  padding: 30px 18px;
+  position: relative;
+}
+
+/* CONTENEDOR PRINCIPAL DEL HEADER */
+.header-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* TÍTULO / LOGO */
+.hero-contenido {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-contenido h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  margin-top: 60px;
+}
+
+/* BOTONES DEL MENÚ */
+.acciones-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Botones de menus Quiénes somos y Cotiza con nosotros */
+.btn-header {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid #00c0ff;
+  color: #00c0ff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  width: 180px;
+  text-align: center;
+}
+
+.btn-header:hover {
+  background-color: rgba(0, 192, 255, 0.18);
+  color: white;
+  border-color: white;
+}
+
+.btn-principal {
+  background-color: #00c0ff;
+  color: #0d1b2a;
+}
+
+.btn-principal:hover {
+  background-color: white;
+  border-color: white;
+  color: #0d1b2a;
+}
+
+/* REDES SOCIALES — posicionamiento con Flexbox, sin margin fijo */
+.redes-sociales {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #00c0ff;
+  color: #00c0ff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.15);
+  background-color: rgba(0,192,255,0.12);
+}
+
+.redes-sociales a:first-child:hover {
+  color: #25D366;
+  border-color: #25D366;
+}
+
+.redes-sociales a:last-child:hover {
+  color: #E1306C;
+  border-color: #E1306C;
+}
+
+/* BOTÓN HAMBURGUESA (móvil) */
+.menu-toggle {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #00c0ff;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  color: #00c0ff;
+  font-size: 26px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/*Botón volver de todos los menus*/
+ .btn-volver {
+      position: fixed;
+      top: 31px;
+      left: 16px;
+      z-index: 999;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background-color: rgba(0,0,0,0.45);
+      backdrop-filter: blur(8px);
+      border: 2px solid #00c0ff;
+      color: #00c0ff;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .btn-volver:hover {
+      background-color: rgba(0, 192, 255, 0.18);
+      color: white;
+      border-color: white;
+    }

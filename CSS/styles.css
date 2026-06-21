@@ -1,0 +1,109 @@
+/* =============================================
+   STYLES.CSS — Estilos base globales
+   Acerinox Web
+   ============================================= */
+
+/* Variables de color para consistencia */
+:root {
+  --azul-acero: #1a3a5c;
+  --azul-claro: #00c0ff;
+  --gris-claro: #f4f6f9;
+  --gris-medio: #dde2ea;
+  --texto-oscuro: #2d3436;
+  --blanco: #ffffff;
+  --sombra: rgba(0, 0, 0, 0.15);
+}
+
+/* Reset y base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, var(--gris-claro), var(--gris-medio));
+  color: var(--texto-oscuro);
+  min-height: 100vh;
+}
+
+/* Headings */
+h2 {
+  color: var(--azul-acero);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+h3 {
+  color: var(--azul-acero);
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px;
+}
+
+/* Lista de servicios */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+/* Sección servicios */
+#servicios {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#servicios p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+#servicios ul {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Sección categorías */
+#categorias {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+/* Sección contacto */
+#contacto {
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--gris-claro);
+}
+
+/* Página de contenido secundario */
+.contenido {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(rgba(15,15,15,0.85), rgba(15,15,15,0.85)),
+              #1a3a5c;
+  color: var(--blanco);
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+/* Animación del carrusel */
+@keyframes desplazar {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
